@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        th, td{
+            border: 1px solid black;
+            padding: 1em;
+        }
+    </style>
+<h1>
+    курсы
+</h1>
+<h2>
+    тоже курсы
+</h2>
 <!--start first part-->
 <div>
     <div>
@@ -24,9 +36,9 @@
         <h1>
             Закажите билет в <span>кино</span>
         </h1>
-        <p>
+        <h2>
             <strong>Всем покупателям подарок!</strong>
-        </p>
+        </h2>
     </div>
 </div>
 <!--end first part-->
@@ -72,7 +84,7 @@
                 </tr>
                 <tr>
                     <td width="33%"  valign="top">
-                        <h1>Большие экраны</h1>
+                        <h2>Большие экраны</h2>
                         <span>
                             Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. At autem cum dolores  
@@ -83,15 +95,15 @@
                         </span>
                     </td>
                     <td width="33%" valign="top">
-                        <h1>Объемный звук</h1>
+                        <h2>Объемный звук</h2>
                         <span>
                             Lorem ipsum dolor sit amet.
                         </span>
                     </td>
                     <td width="33%" valign="top">
-                        <h1>
+                        <h2>
                             Удобные кресла
-                        </h1>
+                        </h2>
                         <span>
                             Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. At autem cum dolores dolorum eius error
@@ -107,17 +119,75 @@
 <!--конец второй части-->
 <!--start third part-->
 <strong>Выберите фильм</strong>
-<p>
-    <strong>Начало сеанса 	Название фильма 	Жанр</strong>
-    <br>
-    10:00	Человек-паук	фантастика, боевик, приключения
-    <br>
-    12:00	Собачья жизнь 2	фэнтези, драма, комедия
-    <br>
-    14:00	История игрушек 4	мультфильм, фэнтези, комедия
-    <br>
-    16:00	Люди в черном: Интернэшнл	фантастика, боевик, комедия
-</p>
+<table>
+    <th>
+        <td>
+            Начало сеанса
+        </td>
+        <td>
+            Название фильма
+        </td>
+        <td>
+            Жанр
+        </td>
+    </th>
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>
+            10:00
+        </td>
+        <td>
+            Человек-паук
+        </td>
+        <td>
+            фантастика, боевик, приключения
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>
+            12:00
+        </td>
+        <td>
+            Собачья жизнь 2
+        </td>
+        <td>
+            фэнтези, драма, комедия
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>
+            14:00
+        </td>
+        <td>
+            История игрушек 4
+        </td>
+        <td>
+            мультфильм, фэнтези, комедия
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>
+            16:00
+        </td>
+        <td>
+            Люди в черном: Интернэшнл
+        </td>
+        <td>
+            фантастика, боевик, комедия
+        </td>
+    </tr>
+</table>
 <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
 </p>
@@ -189,6 +259,61 @@ Lorem ipsum dolor sit amet, consectetur
 Lorem ipsum dolor sit amet, consectetur
 </body>
 <footer>
+    <form action="" method="GET">
+        <div>
+            <input type="text" name="login">
+        </div>
+        <div>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        <div>
+            <input type="text" placeholder="тут подсказка, чувачок">
+        </div>
+        <div>
+        <select name="selector" id="">
+            <option value="selector value 1">
+                value1
+            </option>
+            <option value="selector value 2">
+                value2
+            </option>
+            <option value="selector value 3">
+                value3
+            </option>
+        </select>
+        </div>
+        <div>
+            <label for="radio1">
+                radio1
+            </label>
+            <input type="radio" name="radio1" id="radio1">
+            <br>
+            <label for="radio2">
+                radio2
+            </label>
+            <input type="radio" name="radio2" id="radio2">
+            <br>
+            <label for="radio3">
+                radio3
+            </label>
+            <input type="radio" name="radio3" id="radio3">
+        </div>
+        <textarea name="textarea" id="" cols="30" rows="10" placeholder="подсказкэ"></textarea>
+        <div>
+            <label for="rules">
+                жми сюда
+            </label>
+            <input type="checkbox" id="rules">
+        </div>
+        <input type="file">
+        <input type="submit">
+    </form>
     Имя*
 
     Выбор1
